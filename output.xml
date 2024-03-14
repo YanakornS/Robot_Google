@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.4 on win32)" generated="20240314 17:07:51.570" rpa="false" schemaversion="3">
+<suite id="s1" name="NBA" source="C:\Users\Administrator\Desktop\Robot\NBA.robot">
+<test id="s1-t1" name="Fill Form And Verify First Name" line="15">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240314 17:07:51.715" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Customer-Form-with-BVA/Customer/Customer.html'.</msg>
+<status status="PASS" starttime="20240314 17:07:51.715" endtime="20240314 17:07:52.901"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRST_NAME_ID}</arg>
+<arg>johnjohn</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:52.902" level="INFO">Typing text 'johnjohn' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20240314 17:07:52.901" endtime="20240314 17:07:52.979"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LAST_NAME_ID}</arg>
+<arg>canonc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:52.979" level="INFO">Typing text 'canonc' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20240314 17:07:52.979" endtime="20240314 17:07:53.028"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${AGE_ID}</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:53.028" level="INFO">Typing text '2' into text field 'id=age'.</msg>
+<status status="PASS" starttime="20240314 17:07:53.028" endtime="20240314 17:07:53.070"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:53.077" level="INFO">Clicking button 'css=input[type='submit']'.</msg>
+<status status="PASS" starttime="20240314 17:07:53.077" endtime="20240314 17:07:53.122"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${RESULT_ID}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:53.129" level="INFO">${result} = First Name: johnjohn</msg>
+<status status="PASS" starttime="20240314 17:07:53.122" endtime="20240314 17:07:53.129"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_RESULT}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240314 17:07:53.129" endtime="20240314 17:07:53.129"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240314 17:07:53.129" endtime="20240314 17:07:55.187"/>
+</kw>
+<status status="PASS" starttime="20240314 17:07:51.715" endtime="20240314 17:07:55.187"/>
+</test>
+<test id="s1-t2" name="Fill Form And Verify First Name2" line="26">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240314 17:07:55.197" level="INFO">Opening browser 'Chrome' to base url 'http://localhost/Customer-Form-with-BVA/Customer/Customer.html'.</msg>
+<status status="PASS" starttime="20240314 17:07:55.187" endtime="20240314 17:07:56.410"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${FIRST_NAME_ID}</arg>
+<arg>Johnj</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:56.411" level="INFO">Typing text 'Johnj' into text field 'id=firstName'.</msg>
+<status status="PASS" starttime="20240314 17:07:56.411" endtime="20240314 17:07:56.483"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${LAST_NAME_ID}</arg>
+<arg>canonc</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:56.484" level="INFO">Typing text 'canonc' into text field 'id=lastName'.</msg>
+<status status="PASS" starttime="20240314 17:07:56.483" endtime="20240314 17:07:56.535"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${AGE_ID}</arg>
+<arg>2</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:56.535" level="INFO">Typing text '2' into text field 'id=age'.</msg>
+<status status="PASS" starttime="20240314 17:07:56.535" endtime="20240314 17:07:56.576"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${SUBMIT_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:56.576" level="INFO">Clicking button 'css=input[type='submit']'.</msg>
+<status status="PASS" starttime="20240314 17:07:56.576" endtime="20240314 17:07:56.626"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${result}</var>
+<arg>${RESULT_ID}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20240314 17:07:56.642" level="INFO">${result} = First Name: Johnj</msg>
+<status status="PASS" starttime="20240314 17:07:56.626" endtime="20240314 17:07:56.642"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${result}</arg>
+<arg>${EXPECTED_RESULT2}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240314 17:07:56.642" endtime="20240314 17:07:56.642"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240314 17:07:56.642" endtime="20240314 17:07:58.696"/>
+</kw>
+<status status="PASS" starttime="20240314 17:07:55.187" endtime="20240314 17:07:58.696"/>
+</test>
+<status status="PASS" starttime="20240314 17:07:51.570" endtime="20240314 17:07:58.696"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="NBA">NBA</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
